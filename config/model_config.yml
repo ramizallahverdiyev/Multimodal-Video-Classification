@@ -1,0 +1,36 @@
+experiment_name: tubesense_fusion
+data_csv: data/processed/metadata.csv
+class_names:
+  - action
+  - adventure
+  - comedy
+  - crime
+  - drama
+  - family
+  - fantasy
+  - mystery
+  - romance
+  - sci-fi
+  - thriller
+  - war
+
+video:
+  fps: 1
+  frame_size: [224, 224]
+
+audio:
+  sample_rate: 16000
+  n_mfcc: 40
+  segment_seconds: 12
+
+text:
+  pretrained_model: distilbert-base-uncased
+
+training:
+  batch_size: 4
+  num_workers: 2
+  max_epochs: 8
+  learning_rate: 5e-5
+  weight_decay: 1e-4
+  checkpoint_dir: results/models
+  log_dir: src/training/experiments/experiment1/logs

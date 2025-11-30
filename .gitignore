@@ -1,0 +1,21 @@
+# Python/venv
+.venv/
+__pycache__/
+*.pyc
+
+# IDE/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Data & artifacts
+data/raw/
+data/interim/
+data/processed/
+results/
+notebooks/.ipynb_checkpoints/
+
+# Logs / temp
+*.log
+*.tmp
